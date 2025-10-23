@@ -1,12 +1,12 @@
 public class Objetos_n1 {
 
-    String material;
-    double tamanhoAlturaemCM;
-    boolean aberto;
-    boolean trancada;
-    double tamaLarguraemCM;
+   public String material;
+  public   double tamanhoAlturaemCM;
+  private  boolean aberto;
+  private  boolean trancada;
+  public   double tamaLarguraemCM;
 
-    void abrirJanela() {
+   public void abrirJanela() {
         if (this.aberto) {
             System.out.println("A porta já está aberta");
 
@@ -18,7 +18,7 @@ public class Objetos_n1 {
             System.out.println("A janela foi aberta!");
         } }
 
-    void fecharJanela() {
+   public void fecharJanela() {
         if (!this.aberto) {
             System.out.println("A janela já está fechada");
         } else {
@@ -27,7 +27,7 @@ public class Objetos_n1 {
         }
     }
 
-    void trancarJanela() {
+   private void trancarJanela() {
         if (this.trancada) {
             System.out.println("A janela ja esta trancada");
         } else if(this.aberto){
@@ -38,7 +38,7 @@ public class Objetos_n1 {
         }
     }
 
-    void destrancarJanela() {
+   private void destrancarJanela() {
         if (!this.trancada) {
             System.out.println("A janela já está destrancada");
         } else {

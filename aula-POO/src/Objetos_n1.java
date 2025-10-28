@@ -1,10 +1,10 @@
 public class Objetos_n1 {
 
-   public String material;
-  public   double tamanhoAlturaemCM;
-  private  boolean aberto;
-  private  boolean trancada;
-  public   double tamaLarguraemCM;
+    public String material;
+    public   double tamanhoAlturaemCM;
+    private  boolean aberto;
+    private  boolean trancada;
+    public   double tamaLarguraemCM;
 
    public void abrirJanela() {
         if (this.aberto) {
@@ -46,6 +46,5 @@ public class Objetos_n1 {
             System.out.println("A janela está trancada");
         }
     }
-
 
 }

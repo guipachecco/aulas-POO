@@ -1,9 +1,6 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
 
 public class Main {
 
@@ -47,7 +44,7 @@ public class Main {
 //        janela.tamaLarguraemCM = 43.5;
 
 
-           mouse1 mousePOO = new mouse1("Plástico", 65, 800);
+           Moldemouse mousePOO = new Moldemouse("Plástico", 65, 800);
 
         System.out.println("Material: " + mousePOO.getMaterial());
         System.out.println("DPI: " + mousePOO.getDpi());

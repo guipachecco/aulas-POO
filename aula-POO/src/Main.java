@@ -44,19 +44,42 @@ public class Main {
 //        janela.tamaLarguraemCM = 43.5;
 
 
-           Moldemouse mousePOO = new Moldemouse("Plástico", 65, 800);
-
-        System.out.println("Material: " + mousePOO.getMaterial());
-        System.out.println("DPI: " + mousePOO.getDpi());
-        System.out.println("Peso: " + mousePOO.getPeso());
-
-
+//           Moldemouse mousePOO = new Moldemouse("Plástico", 65, 800);
+//
+//        System.out.println("Material: " + mousePOO.getMaterial());
+//        System.out.println("DPI: " + mousePOO.getDpi());
+//        System.out.println("Peso: " + mousePOO.getPeso());
 
 
+        Atirador a1 = new Atirador("Guilherme", "Parafal", "Brasil", 90);
+        Atirador a2 = new Atirador("Vinicius", "AK-47", "Rússia", 90);
+
+        // Exibindo status inicial
+        System.out.println("=== STATUS INICIAL ===");
+        a1.status();
+        System.out.println("---");
+        a2.status();
+
+        batalha duelo01 = new batalha(a1, a2);
 
 
+        for (int i = 0; i < 10; i++) {
+            duelo01.batalhar();
+        }
 
 
-
+        // Exibindo status atualizado
+        System.out.println("\n=== STATUS FINAL ===");
+        a1.status();
+        a2.status();
     }
 }
+
+
+
+
+
+
+
+
+
